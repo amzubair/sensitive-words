@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d build",
     "dev": "watch \"npm run build\" src",
-    "test": "jest",
+    "test": "jest --runInBand",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run build",
     "release": "np --no-cleanup"
