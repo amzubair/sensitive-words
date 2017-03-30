@@ -8,6 +8,7 @@
     "dev": "watch \"npm run build\" src",
     "test": "jest --runInBand",
     "test:watch": "npm run test -- --watch",
+    "test:coverage" : "npm run test -- --coverage",
     "prepublish": "npm run build",
     "release": "np --no-cleanup"
   },
@@ -31,9 +32,17 @@
     "babel-cli": "^6.24.0",
     "babel-preset-env": "^1.2.2",
     "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
     "jest": "^19.0.2",
     "np": "^2.13.1",
     "watch": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest" : {
+    "coveragePathIgnorePatterns": ["/node_modules", "/build/"],
+    "testPathIgnorePatterns" : ["/node_modules", "/build/"]
+  }
 }
