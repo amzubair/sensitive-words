@@ -1,6 +1,6 @@
 {
   "name": "sensitive-words-12",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Filter out a list of senstive words",
   "main": "build/index.js",
   "scripts": {
