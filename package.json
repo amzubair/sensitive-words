@@ -1,5 +1,5 @@
 {
-  "name": "sensitive-words",
+  "name": "sensitive-words-12",
   "version": "1.0.0",
   "description": "Filter out a list of senstive words",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "build": "babel src -d build",
     "dev": "watch \"npm run build\" src",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "babel-preset-env": "^1.2.2",
     "eslint": "^3.18.0",
     "jest": "^19.0.2",
+    "np": "^2.13.1",
     "watch": "^1.0.2"
   },
   "dependencies": {}
