@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run build",
-    "release": "np"
+    "release": "np --no-cleanup"
   },
   "repository": {
     "type": "git",
