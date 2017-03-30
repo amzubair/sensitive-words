@@ -1,6 +1,6 @@
 {
   "name": "@amzubair/sensitive-words",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Filter out a list of senstive words",
   "main": "build/index.js",
   "scripts": {
