@@ -1,0 +1,36 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of senstive words",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "dev": "watch \"npm run build\" src",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amzubair/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Mohamed Jubair <amzubair@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amzubair/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/amzubair/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.18.0",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
